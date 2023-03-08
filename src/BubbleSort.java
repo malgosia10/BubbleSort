@@ -7,14 +7,11 @@ public class BubbleSort {
 
         Scanner scan = new Scanner(System.in);
         ArrayList<Integer> array = new ArrayList<>();
-
         System.out.println("Podaj liczby całkowite (rozdzielone spacją). Aby zakończyć wprowadzanie wpisz cyfrę 0 i naciśnij enter.");
 
         int value;
-
         do {
             value = scan.nextInt();
-
             if (value != 0) {
                 array.add(value);
             }
@@ -23,9 +20,8 @@ public class BubbleSort {
         algorithm(array);
 
         System.out.println("Posortowany ciąg: " + array);
-
     }
-
+    
     public static void algorithm(ArrayList<Integer>array) {
         int arraySize = array.size();
         for (int i = 0; i < arraySize; i++) {
